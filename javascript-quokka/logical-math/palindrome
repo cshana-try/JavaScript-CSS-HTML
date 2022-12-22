@@ -1,0 +1,17 @@
+// Write a javascript function that will return true if the parameter string is palindrome, else return fale?
+f
+function isPalindrome(s) {
+    var length = s.length; 
+    if (length < 2) {
+      return true;
+    }
+    if (s[0] != s[length - 1]) {
+      return false;
+    }
+  
+    var t = s.substr(1, length - 2);
+    return isPalindrome(t);
+  }
+
+
+

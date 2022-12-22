@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>RAMBA: Zoomies all night.</title>
+</head>
+  
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">RAMBA</h1>
+            </div>
+            
+              
+                <form id="form">
+                    <input type="text" id="search" class="search" placeholder="Search">
+                </form>
+            
+                <form id="genre">
+                    <select name="list" id="list" accesskey="target">
+                        <option value='none' selected>Choose Genre</option>
+                    </select>
+                    <input id= "page-nav" type=button value="Go" onclick="goToNewPage()" />
+                </form>
+            
+                
+              <ul>  
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+              </ul>
+            
+        </div>
+    </div>
+
+    <main id="main"></main>
+
+    <footer id="page-nav">
+        <div>
+          <button id="page-nav"><< Prev</button>
+          <button id="page-nav">1</button>
+          <button id="page-nav">Next >></button>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
